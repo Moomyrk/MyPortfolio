@@ -1,0 +1,674 @@
+/*Задание сложное. Использовал подсказку, гуглил, но пока не понимаю что не так. 
+Все эти атрибуты, числа, что куда вставлять, что менять чтобы оно двигалось?
+CSS пока самое непонятное. */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*header*/
+header {
+    min-height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.pic_pic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 42px;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.logo:hover {
+    background-color: rgb(0, 162, 255);
+    border-radius: 60px;
+}
+
+.out:hover {
+    background-color: rgb(0, 162, 255);
+    border-radius: 60px;
+}
+
+.button_top {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.automation {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/section1.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50%;
+}
+
+.automation_title {
+    font-family: 'Roboto';
+    font-size: 64px;
+    font-weight: 300px;
+    color: #1F3F68;
+    width: 510px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+}
+
+.automation_text {
+    font-family: 'Roboto';
+    line-height: 26px;
+    color: #1F3F68;
+    opacity: 0.6;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    width: 425px;
+}
+
+.automation_text:hover {
+    transform: scale(1.2);
+}
+
+.automation_btn {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px 50px;
+    margin-top: 71px;
+
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.automation_btn:hover {
+    color: #5A98D0;
+    background: #FFFFFF;
+    transform: scale(1.2);
+}
+
+
+/*main*/
+/*Digital section*/
+.digital {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 115px;
+    flex-grow: 1;
+    min-height: 768px;
+    padding-top: 64px;
+}
+
+.digital_title {
+    font-family: 'Roboto';
+    justify-content: center;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.digital_title:hover {
+    transform: scale(1.2);
+}
+
+.cards_box {
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.card {
+    width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_name {
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin-bottom: 14px;
+}
+
+.card:hover {
+    transform: perspective(400px) rotateY(360deg);
+    transition-duration: 3s;
+    cursor: pointer;
+}
+
+.card_pic {
+    align-self: center;
+    margin-bottom: 51px;
+}
+
+.card_link {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+}
+
+
+/*Project section*/
+.project {
+    height: 100%;
+    padding-top: 115px;
+    flex-grow: 1;
+    min-height: 768px;
+}
+
+.project_title {
+    font-family: 'Roboto';
+    justify-content: center;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.project_about {
+    font-family: 'Roboto';
+    width: 75%;
+    margin: 32px auto 64px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    text-align: center;
+}
+
+.project_name {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.project_name_down1 {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+}
+
+.project_name_down2 {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    left: 64px;
+}
+
+.project_art {
+    position: relative;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.project_art_margin {
+    margin-right: 32px;
+}
+
+.project_minibox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 112px;
+}
+
+
+/*footer*/
+/*vocation*/
+footer {
+    padding-top: 91px;
+    padding-bottom: 64px;
+    margin-top: 112px;
+    background: #316099;
+}
+
+.vacation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 96px;
+}
+
+.vacation_title {
+    font-family: 'Roboto';
+    width: 300px;
+    text-align: left;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+}
+
+.vacation_text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.vacation_btn {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 15px 80px;
+    background: #5A98D0;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: #5A98D0;
+    display: inline-block;
+    padding: 15px 50px;
+    margin-top: 71px;
+}
+
+.vacation_btn:hover {
+    color: #5A98D0;
+    background: #FFFFFF;
+}
+
+.hr_line {
+    opacity: 0.4;
+}
+
+.contacts_list {
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 64px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
+}
+
+.contacts_point {
+    flex-grow: 1;
+    margin-right: 32px;
+    display: flex;
+}
+
+.contacts_point:first-child::before {
+    margin-right: 16px;
+    display: block;
+    content: 'A. ';
+}
+
+.contacts_point:nth-child(2)::before {
+    margin-right: 16px;
+    display: block;
+    content: 'T. ';
+}
+
+.contacts_point:last-child::before {
+    margin-right: 16px;
+    display: block;
+    content: 'E. ';
+}
+
+.contacts_link_phone {
+    text-decoration: none;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.contacts-link_email {
+    text-decoration: none;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.contacts_link_phone:hover {
+    background-color: rgb(0, 162, 255);
+    border-radius: 60px;
+}
+
+.contacts-link_email:hover {
+    background-color: rgb(0, 162, 255);
+    border-radius: 60px;
+}
+
+
+/*lastword*/
+.lastword {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 64px;
+}
+
+.lastword_text {
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    letter-spacing: 0.05em;
+}
+
+/*Устройства планшетов*/
+@media screen and (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .automation_box {
+        background-position: right 150px;
+    }
+
+    .cards_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    footer {
+        padding-top: 0;
+    }
+
+    .vacation {
+        padding-top: 47px;
+        padding-left: 124px;
+    }
+
+    .vacation_title {
+        width: 336px;
+    }
+
+    .vacation_text {
+        width: 336px;
+    }
+
+    .vacation_btn {
+        padding: 3px 25px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-right: 85px;
+        margin-top: 68px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        margin-left: 124px;
+        padding: 0;
+        margin-top: 64px;
+    }
+
+    .contacts_list {
+        margin-bottom: 24px;
+    }
+
+    .contacts_list:first-child::before {
+        margin-right: 16px;
+        display: block;
+        content: '1. ';
+        padding-right: 36px;
+    }
+
+    .contacts_list:last-child::before {
+        margin-right: 16px;
+        display: block;
+        content: '2. ';
+        padding-right: 36px;
+    }
+
+    .contacts_list:nth-child(2)::before {
+        margin-right: 16px;
+        display: block;
+        content: '3. ';
+        padding-right: 36px;
+    }
+
+    .lastword {
+        padding-left: 124px;
+    }
+}
+
+
+
+/*Устройства телефонов*/
+
+@media screen and (max-width:667px) {
+    header {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+        /*-чтобы блок не растянул нам высоту---*/
+    }
+
+    .pic_pic {
+        padding-top: 24px;
+    }
+
+    .automation_box {
+        padding-top: 36px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+    }
+
+    .automation_title {
+        text-align: center;
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+    }
+
+    .automation_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .automation_btn {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+    }
+
+    .digital_title {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .digital {
+        padding-top: 48px;
+    }
+
+    .cards_box {
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 400%;
+    }
+
+    .project_about {
+        width: 400%;
+    }
+
+    .project_title {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .project_name {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__parent {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .project_art_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .project_name_down1 {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        left: 16px;
+    }
+
+    .project_name_down2 {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        left: 16px;
+    }
+
+    .vacation {
+        padding-top: 18px;
+        padding-right: 16px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .vacation_title {
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .vacation_text {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.6;
+        text-align: center;
+    }
+
+    .vacation_btn {
+        padding: 3px 25px;
+        font-size: 16px;
+        line-height: 26px;
+        margin-right: 0px;
+        margin-top: 40px;
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        margin: 32px 0 37px;
+    }
+
+    .contacts_list:first-child::before {
+        margin-right: 16px;
+        display: block;
+        content: '1. ';
+        padding-right: 10px;
+    }
+
+    .contacts_list:last-child::before {
+        margin-right: 16px;
+        display: block;
+        content: '3. ';
+        padding-right: 10px;
+    }
+
+    .contacts_list:nth-child(2)::before {
+        margin-right: 16px;
+        display: block;
+        content: '2. ';
+        padding-right: 10px;
+    }
+
+    .lastword {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .lastword_text {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.4;
+    }
+}
